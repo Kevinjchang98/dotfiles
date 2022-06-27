@@ -1,10 +1,16 @@
 set nocompatible
 
+" Line numbers
 set number
 set relativenumber
 
+" Tab settings
 set tabstop=4
 set shiftwidth=0
+
+" Netrw directory view
+let g:netrw_liststyle=3
+let g:netrw_banner=0
 
 " Vim plug auto install
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
