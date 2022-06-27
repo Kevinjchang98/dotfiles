@@ -40,11 +40,14 @@ Plug 'itchyny/lightline.vim'
 " Sensible
 Plug 'tpope/vim-sensible'
 
+" For GLSL
+Plug 'tikhomirov/vim-glsl'
+
 " Auto complete
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Will need to run following after first install
-" :CocInstall coc-clangd coc-css coc-java coc-tsserver coc-json
+" :CocInstall coc-clangd coc-css coc-java coc-tsserver coc-json coc-glslx
 
 call plug#end()
 
