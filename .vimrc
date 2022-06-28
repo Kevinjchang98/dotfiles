@@ -16,6 +16,9 @@ let g:netrw_winsize=20
 let g:netrw_browse_split=4
 let g:netrw_altv=1
 
+" Disable continuation of comments
+autocmd FileType * set formatoptions-=o
+
 " Vim plug auto install
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
@@ -50,6 +53,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Will need to run following after first install
 " :CocInstall coc-clangd coc-css coc-java coc-tsserver coc-json coc-glslx
 
+" Emmet
+Plug 'mattn/emmet-vim'
+
 call plug#end()
 
 " Set color
@@ -68,3 +74,9 @@ if $TERM_PROGRAM =~ "iTerm"
     let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
     let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
 endif
+
+" Emmet
+
+" Enable only for css and html
+let g:user_emmet_install_global = 0
+autocmd FileType html,css,js,jsx,ts,tsx EmmetInstall
