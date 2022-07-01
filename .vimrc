@@ -1,6 +1,9 @@
 set nocompatible
 filetype plugin on
 
+" Disable startup warnings
+let g:coc_disable_startup_warning = 1
+
 " Line numbers
 set number
 set relativenumber
