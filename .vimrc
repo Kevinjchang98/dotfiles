@@ -59,6 +59,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Emmet
 Plug 'mattn/emmet-vim'
 
+" Waka time
+Plug 'wakatime/vim-wakatime'
+
 call plug#end()
 
 " Set color
