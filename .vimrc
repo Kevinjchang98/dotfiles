@@ -54,7 +54,7 @@ Plug 'tikhomirov/vim-glsl'
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Will need to run following after first install
-" :CocInstall coc-clangd coc-css coc-java coc-tsserver coc-json coc-glslx
+" :CocInstall coc-clangd coc-css coc-java coc-tsserver coc-json coc-glslx coc-pyright
 
 " Emmet
 Plug 'mattn/emmet-vim'
