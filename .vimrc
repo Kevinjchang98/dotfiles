@@ -62,6 +62,9 @@ Plug 'mattn/emmet-vim'
 " Waka time
 Plug 'wakatime/vim-wakatime'
 
+" vimtex
+Plug 'lervag/vimtex'
+
 call plug#end()
 
 " Set color
