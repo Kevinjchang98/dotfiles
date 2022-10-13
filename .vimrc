@@ -12,6 +12,9 @@ set relativenumber
 set tabstop=4
 set shiftwidth=0
 
+" Don't split words on soft wrap
+set linebreak
+
 " Netrw directory view
 let g:netrw_liststyle=3
 let g:netrw_banner=0
@@ -64,6 +67,9 @@ Plug 'wakatime/vim-wakatime'
 
 " vimtex
 Plug 'lervag/vimtex'
+	let g:tex_flavor='latex'
+	let g:vimtex_view_method='zathura'
+	let g:vimtex_quickfix_mode=0
 
 call plug#end()
 
