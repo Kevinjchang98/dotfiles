@@ -139,3 +139,9 @@ source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH=$PATH:/Users/kevinchang/.spicetify
+
+# Alias for intel and arm homebrew
+ibrew='arch -x86_64 /usr/local/bin/brew'
+abrew='arch -arm64e /opt/homebrew/bin/brew'
