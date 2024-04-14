@@ -5,6 +5,8 @@
 
 vim.opt.relativenumber = true -- relative line numbers
 
+vim.opt.clipboard = "unnamedplus" -- share system clipboard
+
 lvim.colorscheme = "tokyonight"
 
 -- use treesitter folding
